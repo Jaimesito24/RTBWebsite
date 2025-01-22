@@ -1,0 +1,31 @@
+/* Reset default margins/padding for the page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Example font */
+
+    background-color: #8d878727;
+  }
+  
+  /* Style the header as a black top bar */
+  header {
+    background-color: #000;     /* Black background */
+    color: #fff;                /* White text so it’s visible on black */
+    padding: 0.1rem 1rem;             /* Adds space inside the header */
+    border-bottom: 3px solid #ccc; /* A lighter border to separate from body */
+             /* Center the text (optional) */
+    height: 70 px;
+  }
+
+  header img{
+    width: 120px
+    
+  }
+  
+  /* You can also add spacing to your other sections */
+  section,
+  main {
+    margin: 1rem;  /* This adds spacing around sections and the main area */
+  }
+
+  
