@@ -17,9 +17,16 @@ body {
   /* You can also add spacing to your other sections */
   section,
   main {
-    margin: 1rem;  /* This adds spacing around sections and the main area */
+   
   }
 
   .navbar-black{
     background-color: #000 !important;
+  }
+
+  .carousel-item img{
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+
   }

@@ -19,6 +19,8 @@
 <body>
 
   <!-- Start of Bootstrap Navbar -->  <!--       HERE IS WHERE YOU CHANGE THE NAVBAR COLOR      -->
+
+  
   <nav class="navbar navbar-expand-lg navbar-dark navbar-black" >
     <!-- .container-fluid helps with consistent width and spacing -->
     <div class="container-fluid">
@@ -51,7 +53,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <!-- Example links; customize or remove as you wish -->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#"></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"></a>
@@ -61,24 +63,94 @@
           </li>
         </ul>
 
-        <!-- Example search form; remove if not needed -->
+        
 
       </div>
     </div>
   </nav>
   <!-- End of Navbar -->
 
-  <!-- Phone Number Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Phone: (111) 255 - 255 - 233</p>
-  </section>
+<!-- Hero Section -->
+<section class="py-0">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <!-- Left Column: Text -->
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Expert Local Cuts
+        </h1>
+        <p class="lead">
+          Welcome to RTB Barbershop, where precision cuts meet modern style. 
+          Our mission is to give you an unforgettable grooming experience 
+          so you can feel confident and look your best.
+        </p>
+        <!-- YOU CAN ADD A LEARN MORE SECTION FROM THIS LINE OF CODE : AT THE END OF THE ANCHOR ELEMENT --> 
+        <a href="#" class="btn btn-dark btn-lg mt-3">BOOK APPOINTMENT</a>
+      </div>
+
+      <!-- Right Column: Carousel -->
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img 
+                src="images/cut_1.png" 
+                class="d-block w-100" 
+                alt="Barber Shop 1" 
+              />
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img 
+                src="images/cut_2.png" 
+                class="d-block w-100" 
+                alt="Barber Shop 2" 
+              />
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img 
+                src="images/cut_3.png" 
+                class="d-block w-100" 
+                alt="Barber Shop 3" 
+              />
+            </div>
+          </div>
+
+          <!-- Carousel Controls (optional) -->
+          <button 
+            class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#heroCarousel" 
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button 
+            class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#heroCarousel" 
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Hero Section -->
+
+
+
 
   <!-- Main Content Section -->
-  <main>
-    <h2>About RTB</h2>
-    <p>Enter the about information.</p>
-  </main>
+
+
 
   <!-- Bootstrap JS (for navbar collapse, toggler, etc.) -->
   <script 
