@@ -1,32 +1,82 @@
 /* Reset default margins/padding for the page */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif; /* Example font */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #8d878727;
+}
 
-    background-color: #8d878727;
+/* Navbar Styling */
+.navbar-black {
+  background-color: #000 !important; /* Ensures navbar stays black */
+}
+
+/* Center the Navbar Logo */
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Logo Styling */
+.navbar-brand img {
+  height: 70px; /* Adjust for preferred logo size */
+  width: auto;
+}
+
+/* Hero Section (Carousel & Text Layout) */
+.hero-section {
+  margin: 0; /* Remove any extra spacing */
+  padding: 0; /* Ensures the hero section aligns perfectly */
+}
+
+/* Carousel Image Adjustments */
+.carousel-item img {
+  max-height: 500px; /* Adjust height of images */
+  width: 100%;
+  object-fit: cover; /* Ensures images fill the space while maintaining aspect ratio */
+}
+
+/* Main Content Text */
+h1, h2, h3 {
+  font-weight: bold; /* Make headings stand out */
+}
+
+p {
+  font-size: 1rem; /* Standard readable font size */
+}
+
+/* Button Styling */
+.btn-dark {
+  background-color: #000 !important;
+  border-color: #000 !important;
+  color: #fff !important;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+  background-color: #333 !important; /* Slightly lighter black for hover effect */
+  border-color: #333 !important;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand img {
+      height: 50px; /* Smaller logo on smaller screens */
   }
-  
 
-
-  header img{
-    width: 140px
-    
-  }
-  
-  /* You can also add spacing to your other sections */
-  section,
-  main {
-   
+  .carousel-item img {
+      max-height: 350px; /* Adjust image size for mobile */
   }
 
-  .navbar-black{
-    background-color: #000 !important;
+  h1 {
+      font-size: 2rem; /* Adjust heading size for mobile */
   }
 
-  .carousel-item img{
-    max-height: 500px;
-    width: 100%;
-    object-fit: cover;
-
+  p {
+      font-size: 0.9rem; /* Adjust paragraph size for mobile */
   }
+}
