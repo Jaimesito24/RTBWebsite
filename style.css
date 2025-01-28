@@ -62,21 +62,87 @@ p {
   border-color: #333 !important;
 }
 
+/* Contact Section Styling */
+.contact-section {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 60px 0;
+}
+
+.contact-section h2 {
+  color: #fff; /* White heading */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p.lead {
+  color: #ccc; /* Light gray for paragraph text */
+  font-size: 1.2rem;
+}
+
+.contact-section ul {
+  color: #fff; /* White text for list items */
+  font-size: 1rem;
+}
+
+.contact-section ul li {
+  margin-bottom: 15px;
+}
+
+.contact-section ul li i {
+  color: #fff; /* White icons */
+  margin-right: 10px;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Light shadow for contrast */
+}
+
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
   .navbar-brand img {
-      height: 50px; /* Smaller logo on smaller screens */
+    height: 50px; /* Smaller logo on smaller screens */
   }
 
   .carousel-item img {
-      max-height: 350px; /* Adjust image size for mobile */
+    max-height: 350px; /* Adjust image size for mobile */
   }
 
   h1 {
-      font-size: 2rem; /* Adjust heading size for mobile */
+    font-size: 2rem; /* Adjust heading size for mobile */
   }
 
   p {
-      font-size: 0.9rem; /* Adjust paragraph size for mobile */
+    font-size: 0.9rem; /* Adjust paragraph size for mobile */
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-section p.lead {
+    font-size: 1rem;
+  }
+
+  .contact-section ul li {
+    font-size: 0.9rem;
+  }
+
+  .map-container {
+    margin-top: 20px;
+  }
+}
+
+
+.hero-section .col-md-6 {
+  padding-left: 40px; 
+}
+
+
+@media (max-width: 768px) {
+  .hero-section .col-md-6 {
+    padding-left: 20px; 
   }
 }
