@@ -146,3 +146,130 @@ p {
     padding-left: 20px; 
   }
 }
+
+/* Meet the Barbers Section Styling */
+.meet-barbers-section {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 60px 0;
+}
+
+.meet-barbers-section h2 {
+  color: #000; /* Black heading */
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.meet-barbers-section .carousel-item {
+  padding: 20px;
+}
+
+.meet-barbers-section .carousel-item img {
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.meet-barbers-section h3 {
+  color: #000; /* Black text for barber names */
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.meet-barbers-section p.lead {
+  color: #555; /* Gray text for barber titles */
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.meet-barbers-section p {
+  color: #333; /* Dark gray text for descriptions */
+  font-size: 1rem;
+}
+
+/* Carousel Controls Styling */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* White arrows for better visibility */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .meet-barbers-section h2 {
+    font-size: 2rem;
+  }
+
+  .meet-barbers-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .meet-barbers-section p.lead {
+    font-size: 1rem;
+  }
+
+  .meet-barbers-section p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+/* Hero Section Carousel Arrows Positioning */
+.hero-section .carousel-control-prev,
+.hero-section .carousel-control-next {
+  top: 50%; /* Position arrows vertically in the middle */
+  transform: translateY(-50%); /* Center them perfectly */
+  width: 40px; /* Adjust arrow size */
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  border-radius: 50%; /* Make arrows circular */
+}
+
+.hero-section .carousel-control-prev {
+  left: 20px; /* Position the previous arrow */
+}
+
+.hero-section .carousel-control-next {
+  right: 20px; /* Position the next arrow */
+}
+
+.hero-section .carousel-control-prev-icon,
+.hero-section .carousel-control-next-icon {
+  filter: invert(1); /* Make arrows white */
+}
+
+/* Meet the Barbers Section Carousel Arrows Positioning */
+.meet-barbers-section .carousel-control-prev,
+.meet-barbers-section .carousel-control-next {
+  top: 50%; /* Position arrows vertically in the middle */
+  transform: translateY(-50%); /* Center them perfectly */
+  width: 40px; /* Adjust arrow size */
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  border-radius: 50%; /* Make arrows circular */
+}
+
+.meet-barbers-section .carousel-control-prev {
+  left: 20px; /* Position the previous arrow */
+}
+
+.meet-barbers-section .carousel-control-next {
+  right: 20px; /* Position the next arrow */
+}
+
+.meet-barbers-section .carousel-control-prev-icon,
+.meet-barbers-section .carousel-control-next-icon {
+  filter: invert(1); /* Make arrows white */
+}
