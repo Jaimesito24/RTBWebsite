@@ -345,3 +345,28 @@ p {
   inset: 0;
 }
 
+/* Mobile Hero Section Fix */
+@media (max-width: 768px) {
+  /* Remove all left spacing */
+  .hero-section .container-fluid,
+  .hero-section .row,
+  .hero-section .col-md-6,
+  .hero-section .carousel,
+  .hero-section .carousel-inner,
+  .hero-section .carousel-item,
+  .hero-section .carousel-item img {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  /* Stretches images to screen edge */
+  .hero-section .carousel-item img {
+    width: 100vw !important;
+    margin-left: -12px; /* Counteract Bootstrap's column padding */
+  }
+}
+
+/* Optional: Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
