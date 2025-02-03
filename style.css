@@ -405,3 +405,26 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  /* Make the left column a flex container */
+  .hero-section .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Keep text left-aligned */
+  }
+
+  /* Center just the button */
+  .hero-section .btn-dark {
+    align-self: center; /* Centers the button horizontally */
+    width: auto;        /* Make sure it only spans its text */
+    margin: 1rem 0;     /* Optional spacing */
+  }
+}
+
+.meet-barbers-section img.smaller-barber-image {
+  max-width: 300px;  /* Adjust as needed */
+  width: 100%;       /* Let it fill up to 300px, but shrink on smaller screens */
+  height: auto;      /* Keep the aspect ratio */
+  display: block;    
+  margin: 0 auto;    /* Center the image if desired */
+}
