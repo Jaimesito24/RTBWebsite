@@ -344,7 +344,6 @@ p {
   position: absolute;
   inset: 0;
 }
-
 /* Mobile Hero Section Fix */
 @media (max-width: 768px) {
   /* Remove all left spacing */
@@ -370,3 +369,39 @@ p {
 body {
   overflow-x: hidden;
 }
+
+/* Reviews Section - Mobile Fix */
+@media (max-width: 768px) {
+  .reviews-section .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100vw; /* Force full width */
+    overflow: hidden; /* Hide horizontal overflow */
+  }
+
+  .tag-list {
+    max-width: 100vw !important; /* Override 80vw */
+    margin-left: -12px; /* Counteract Bootstrap's default padding */
+    margin-right: -12px;
+  }
+
+  .loop-slider .inner {
+    animation-name: loop-mobile; /* Optional: Adjust animation for mobile */
+  }
+
+  /* Adjust the fade gradient to cover edges */
+  .fade {
+    background: linear-gradient(90deg, #111 5%, transparent 20%, transparent 80%, #111 95%);
+  }
+}
+
+/* Optional: Adjust animation speed for mobile */
+@keyframes loop-mobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
