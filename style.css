@@ -32,9 +32,10 @@ body {
 
 /* Carousel Image Adjustments */
 .carousel-item img {
-  max-height: 500px; /* Adjust height of images */
+  max-height: 700px; /* Adjust height of images */
   width: 100%;
-  object-fit: cover; /* Ensures images fill the space while maintaining aspect ratio */
+  object-fit: cover; 
+  object-position: center;
 }
 
 /* Main Content Text */
@@ -361,7 +362,7 @@ p {
   /* Stretches images to screen edge */
   .hero-section .carousel-item img {
     width: 100vw !important;
-    margin-left: -12px; /* Counteract Bootstrap's column padding */
+    margin-left: -12px; 
   }
 }
 
@@ -428,3 +429,16 @@ body {
   display: block;    
   margin: 0 auto;    /* Center the image if desired */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
