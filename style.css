@@ -430,6 +430,51 @@ body {
   margin: 0 auto;    /* Center the image if desired */
 }
 
+/* App Download Section Styling */
+.app-download {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.app-download h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.app-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Adds spacing between buttons */
+  margin-top: 10px;
+}
+
+.android {
+  width: 150px;
+}
+
+.apple {
+  width: 164px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .app-icons {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 10px;
+  }
+
+  .android, .apple {
+    width: 200px; /* Slightly larger buttons for mobile users */
+  }
+}
+
+
+.hero-section .lead {
+  font-size: 1.5rem;  /* Slightly bigger text */
+    /* Bolder text */
+  color: #222; /* Slightly darker text */
+}
 
 
 
